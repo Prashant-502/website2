@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checklist</title>
-    <link rel="stylesheet" href="css/grid.css" />
+    <!-- <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick.css" /> -->
+    <link rel="preload" href="css/grid.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/grid.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="css/slick.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/slick.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
   </head>
 
   <body>
@@ -355,12 +361,8 @@
 
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/lazysizes.min.js"></script>
-    <!-- <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
-    ></script> -->
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/lazysizes.min.js"defer></script>
     <script
       type="text/javascript"
       src="https://platform-api.sharethis.com/js/sharethis.js#property=62499bc8bf1ff50019da8de6&product=inline-share-buttons"
@@ -369,10 +371,6 @@
     <script>
       (function ($) {
         $(document).ready(function () {
-          // Lazzy LOad initiate
-          // const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-          // observer.observe();
-          //End Lazzy load initiate
 
           if ($(window).width() < 768) {
             $(".carousel").slick({
