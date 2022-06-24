@@ -99,15 +99,67 @@
     <!-- <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/slick.css" /> -->
-    <link rel="preload" href="css/grid.css" as="style" onload="this.rel='stylesheet'"/>
-    <link rel="stylesheet" href="css/grid.css" media="print" onload="this.media='all'"/>
-    <link rel="preload" href="css/slick.css" as="style" onload="this.rel='stylesheet'"/>
-    <link rel="stylesheet" href="css/slick.css" media="print" onload="this.media='all'"/>
-    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'"/>
-    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'"/>
+    <link
+      rel="preload"
+      href="css/grid.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="stylesheet"
+      href="css/grid.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="preload"
+      href="css/slick.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="stylesheet"
+      href="css/slick.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="preload"
+      href="css/style.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <script type="text/partytown">
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KKLKRK4");
+    </script>
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KKLKRK4"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <section class="schbang-wrapper hero">
       <div class="container">
         <div class="row">
@@ -458,10 +510,10 @@
   <!--Scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="js/slick.min.js" defer></script>
-  <script type="text/partytown" src="js/lazysizes.min.js" defer></script>
+  <script src="js/lazysizes.min.js" defer></script>
   <script src="~partytown/partytown.js"></script>
   <script src="https://platform-api.sharethis.com/js/sharethis.js#property=62499bc8bf1ff50019da8de6&product=inline-share-buttons"></script>
-  <script >
+  <script>
     (function ($) {
       $(document).ready(function () {
         if ($(window).width() < 768) {
