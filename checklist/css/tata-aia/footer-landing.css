@@ -79,7 +79,7 @@ footer .footer-div .footer-anchor {
   background-repeat: no-repeat;
   margin: 0px 18px;
   background-size: contain;
-  background-image: url("/checklist/img/tata-aia/vrline.svg");
+  background-image: url("./vrline.svg");
 }
 
 .disclamer__link__details li a {
@@ -126,7 +126,7 @@ footer .footer-div .footer-anchor {
     margin: 0px 18px;
     background-repeat: no-repeat;
     background-position: right;
-    background-image: url("/checklist/img/tata-aia/vrline.svg");
+    background-image: url("vrline.svg");
     z-index: -1;
     right: -62px;
   }
