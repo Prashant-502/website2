@@ -68,11 +68,36 @@
           format("woff2");
       }
     </style>
-    <link rel="preload" href="./css/tata-aia/header-landing.css"  as="style" onload="this.rel='stylesheet'"/>
-    <link rel="preload" href="./css/tata-aia/firstfold.css"  as="style" onload="this.rel='stylesheet'"/>
-    <link rel="preload" href="./css/tata-aia/slick.min.css"  as="style" onload="this.rel='stylesheet'"/>
-    <link rel="preload" href="./css/tata-aia/slick-theme.min.css"  as="style" onload="this.rel='stylesheet'"/>
-    <link rel="preload" href="./css/tata-aia/landing-page.css"  as="style" onload="this.rel='stylesheet'"/>
+    <link
+      rel="preload"
+      href="./css/tata-aia/header-landing.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./css/tata-aia/firstfold.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./css/tata-aia/slick.min.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./css/tata-aia/slick-theme.min.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./css/tata-aia/landing-page.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
 
     <!-- <link rel="preload" href="./css/tata-aia/slick.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="./css/tata-aia/slick-theme.min.css" as="style" onload="this.rel='stylesheet'">
@@ -1268,143 +1293,150 @@
       </div>
     </footer>
     <!-- FOOTER END -->
-  </body>
-  <link rel="preload" href="./css/tata-aia/footer-landing.css"  as="style" onload="this.rel='stylesheet'"/>
-  <script src="./js/tata-aia/jquery.min.js"></script>
-  <script src="./js/tata-aia/slick.min.js"></script>
-  <script src="./js/tata-aia/lozad.min.js"></script>
+    <link
+      rel="preload"
+      href="./css/tata-aia/footer-landing.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <script src="./js/tata-aia/jquery.min.js"></script>
+    <script src="./js/tata-aia/slick.min.js"></script>
+    <script src="./js/tata-aia/lozad.min.js"></script>
 
-  <script>
-    /* Lozad START*/
-    const observer = lozad(); // lazy loads elements with default selector as ".lozad"
-    observer.observe();
-    /* Lozad END*/
-  </script>
+    <script>
+      /* Lozad START*/
+      const observer = lozad(); // lazy loads elements with default selector as ".lozad"
+      observer.observe();
+      /* Lozad END*/
+    </script>
 
-  <script>
-    //   Testimonial START
-    $(".testi-carousel").slick({
-      dots: true,
-      infinite: false,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      prevArrow: false,
-      nextArrow: false,
-      responsive: [
-        {
-          breakpoint: 1366,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: false,
-            dots: true,
-            arrow: false,
+    <script>
+      //   Testimonial START
+      $(".testi-carousel").slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: false,
+        nextArrow: false,
+        responsive: [
+          {
+            breakpoint: 1366,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: false,
+              dots: true,
+              arrow: false,
+            },
           },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            infinite: false,
-            slidesToShow: 1.3,
-            slidesToScroll: 1,
+          {
+            breakpoint: 600,
+            settings: {
+              infinite: false,
+              slidesToShow: 1.3,
+              slidesToScroll: 1,
+            },
           },
-        },
-        {
-          breakpoint: 380,
-          settings: {
-            infinite: false,
-            slidesToShow: 1.3,
-            slidesToScroll: 1,
+          {
+            breakpoint: 380,
+            settings: {
+              infinite: false,
+              slidesToShow: 1.3,
+              slidesToScroll: 1,
+            },
           },
-        },
-      ],
-    });
+        ],
+      });
 
-    //   Testimonial END
-  </script>
+      //   Testimonial END
+    </script>
 
-  <script>
-    // YT popup start
-    const ytupdateButton = document.getElementById("yt-anchor");
-    const ytDialog = document.getElementById("ytDialog");
-    const ytvideobox = document.getElementById("ytVideobox");
-    // const outputBox = document.querySelector('output');
-    const selectElyt = ytDialog.querySelector("select");
-    // const confirmBtn = favDialog.querySelector('#confirmBtn');
-    const ytclosepop = ytDialog.querySelector("#close-popup");
-    const body = document.querySelector("body");
-    // If a browser doesn't support the dialog, then hide the
-    // dialog contents by default.
-    if (typeof ytDialog.showModal !== "function") {
-      ytDialog.hidden = true;
-      /* a fallback script to allow this dialog/form to function
+    <script>
+      // YT popup start
+      const ytupdateButton = document.getElementById("yt-anchor");
+      const ytDialog = document.getElementById("ytDialog");
+      const ytvideobox = document.getElementById("ytVideobox");
+      // const outputBox = document.querySelector('output');
+      const selectElyt = ytDialog.querySelector("select");
+      // const confirmBtn = favDialog.querySelector('#confirmBtn');
+      const ytclosepop = ytDialog.querySelector("#close-popup");
+      const body = document.querySelector("body");
+      // If a browser doesn't support the dialog, then hide the
+      // dialog contents by default.
+      if (typeof ytDialog.showModal !== "function") {
+        ytDialog.hidden = true;
+        /* a fallback script to allow this dialog/form to function
            for legacy browsers that do not support <dialog>
            could be provided here.
         */
-    }
-    // "Update details" button opens the <dialog> modally
-    ytupdateButton.addEventListener("click", function onOpen(e) {
-      e.preventDefault();
-      if (typeof ytDialog.showModal === "function") {
-        ytDialog.showModal();
-        body.style.overflow = "hidden";
-
-        var iframe = document.createElement("iframe");
-        iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute("allowfullscreen", "allowfullscreen");
-        iframe.setAttribute("mozallowfullscreen", "mozallowfullscreen");
-        iframe.setAttribute("msallowfullscreen", "msallowfullscreen");
-        iframe.setAttribute("oallowfullscreen", "oallowfullscreen");
-        iframe.setAttribute("webkitallowfullscreen", "webkitallowfullscreen");
-        // iframe.setAttribute("allow", "autoplay");
-        // iframe.setAttribute("loading", "lazy");
-        iframe.setAttribute("height", "315px");
-        iframe.setAttribute("width", "560px");
-        iframe.setAttribute("class", "promo-video-link");
-        iframe.setAttribute(
-          "src",
-          "https://www.youtube.com/embed/" +
-            ytDialog.dataset.embed +
-            "?rel=0&showinfo=0&autoplay=1"
-        );
-        ytvideobox.innerHTML = "";
-        ytvideobox.appendChild(iframe);
-        actionButtons[0].style.display = "none";
-      } else {
-        // outputBox.value = "Sorry, the <dialog> API is not supported by this browser.";
-        body.style.overflow = "auto";
       }
-    });
+      // "Update details" button opens the <dialog> modally
+      ytupdateButton.addEventListener("click", function onOpen(e) {
+        e.preventDefault();
+        if (typeof ytDialog.showModal === "function") {
+          ytDialog.showModal();
+          body.style.overflow = "hidden";
 
-    ytclosepop.addEventListener("click", function (e) {
-      var iframe = document.createElement("iframe");
-      document.getElementById("ytDialog").close();
-      body.style.overflow = "auto";
-      e.preventDefault();
-      ytvideobox.innerHTML = "";
-    });
-
-    // YT popup end
-  </script>
-
-  <script>
-    /* Normal Accordion START */
-    const accordiontitles = document.querySelectorAll(".normal-accordion-div");
-
-    accordiontitles.forEach((accordiontitle) => {
-      accordiontitle.addEventListener("click", () => {
-        if (accordiontitle.classList.contains("is-open")) {
-          accordiontitle.classList.remove("is-open");
+          var iframe = document.createElement("iframe");
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute("allowfullscreen", "allowfullscreen");
+          iframe.setAttribute("mozallowfullscreen", "mozallowfullscreen");
+          iframe.setAttribute("msallowfullscreen", "msallowfullscreen");
+          iframe.setAttribute("oallowfullscreen", "oallowfullscreen");
+          iframe.setAttribute("webkitallowfullscreen", "webkitallowfullscreen");
+          // iframe.setAttribute("allow", "autoplay");
+          // iframe.setAttribute("loading", "lazy");
+          iframe.setAttribute("height", "315px");
+          iframe.setAttribute("width", "560px");
+          iframe.setAttribute("class", "promo-video-link");
+          iframe.setAttribute(
+            "src",
+            "https://www.youtube.com/embed/" +
+              ytDialog.dataset.embed +
+              "?rel=0&showinfo=0&autoplay=1"
+          );
+          ytvideobox.innerHTML = "";
+          ytvideobox.appendChild(iframe);
+          actionButtons[0].style.display = "none";
         } else {
-          const accordiontitlesWithIsOpen =
-            document.querySelectorAll(".is-open");
-          accordiontitlesWithIsOpen.forEach((accordiontitleWithIsOpen) => {
-            accordiontitleWithIsOpen.classList.remove("is-open");
-          });
-          accordiontitle.classList.add("is-open");
+          // outputBox.value = "Sorry, the <dialog> API is not supported by this browser.";
+          body.style.overflow = "auto";
         }
       });
-    });
-    /* Normal Accordion END */
-  </script>
+
+      ytclosepop.addEventListener("click", function (e) {
+        var iframe = document.createElement("iframe");
+        document.getElementById("ytDialog").close();
+        body.style.overflow = "auto";
+        e.preventDefault();
+        ytvideobox.innerHTML = "";
+      });
+
+      // YT popup end
+    </script>
+
+    <script>
+      /* Normal Accordion START */
+      const accordiontitles = document.querySelectorAll(
+        ".normal-accordion-div"
+      );
+
+      accordiontitles.forEach((accordiontitle) => {
+        accordiontitle.addEventListener("click", () => {
+          if (accordiontitle.classList.contains("is-open")) {
+            accordiontitle.classList.remove("is-open");
+          } else {
+            const accordiontitlesWithIsOpen =
+              document.querySelectorAll(".is-open");
+            accordiontitlesWithIsOpen.forEach((accordiontitleWithIsOpen) => {
+              accordiontitleWithIsOpen.classList.remove("is-open");
+            });
+            accordiontitle.classList.add("is-open");
+          }
+        });
+      });
+      /* Normal Accordion END */
+    </script>
+  </body>
 </html>
