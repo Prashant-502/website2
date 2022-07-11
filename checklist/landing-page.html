@@ -69,11 +69,20 @@
           format("woff2");
       }
     </style>
-    <link rel="stylesheet" href="./css/tata-aia/header-landing.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/firstfold.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/slick.min.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/slick-theme.min.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/landing-page.css"/>
+    <link rel="preload" href="./css/tata-aia/header-landing.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="./css/tata-aia/header-landing.css" media="print" onload="this.media='all'">
+
+    <link rel="preload" href="./css/tata-aia/firstfold.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="./css/tata-aia/firstfold.css" media="print" onload="this.media='all'">
+
+    <link rel="preload" href="./css/tata-aia/slick.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="./css/tata-aia/slick.min.css" media="print" onload="this.media='all'">
+
+    <link rel="preload" href="./css/tata-aia/slick-theme.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="./css/tata-aia/slick-theme.min.css" media="print" onload="this.media='all'">
+    
+    <link rel="preload" href="./css/tata-aia/landing-page.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="./css/tata-aia/landing-page.css" media="print" onload="this.media='all'">
 
     <!-- <link rel="stylesheet" href="./css/tata-aia/slick.min.css">
     <link rel="stylesheet" href="./css/tata-aia/slick-theme.min.css">
@@ -1284,6 +1293,11 @@
       }, 20);
 
       function init() {
+        /* Lozad START*/
+        const observer = lozad(); // lazy loads elements with default selector as ".lozad"
+        observer.observe();
+        /* Lozad END*/
+
         $(".testi-carousel").slick({
           dots: true,
           infinite: false,
@@ -1321,10 +1335,6 @@
           ],
         });
         //   Testimonial END
-        /* Lozad START*/
-        const observer = lozad(); // lazy loads elements with default selector as ".lozad"
-        observer.observe();
-        /* Lozad END*/
       }
     </script>
 
