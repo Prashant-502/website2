@@ -7,34 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Cache-control" content="public" max-age="31536000" />
     <title>Awareness Screen</title>
-    <link
-      as="font"
-      crossorigin=""
-      href="./css/tata-aia/fonts/helvetica.woff2"
-      rel="preload"
-      type="font/woff2"
-    />
-    <link
-      as="font"
-      crossorigin=""
-      href="./css/tata-aia/fonts/helvetica-bold.woff2"
-      rel="preload"
-      type="font/woff2"
-    />
-    <link
-      as="font"
-      crossorigin=""
-      href="./css/tata-aia/fonts/Helvetica-Neue-Light.woff2"
-      rel="preload"
-      type="font/woff2"
-    />
-    <link
-      as="font"
-      crossorigin=""
-      href="./css/tata-aia/fonts/helvetica-neue-lt-std-Th.woff2"
-      rel="preload"
-      type="font/woff2"
-    />
+    <link rel="icon" type="image/x-icon" href="/checklist/img/image 11.png">
+    <link as="font" crossorigin="" href="./css/tata-aia/fonts/helvetica.woff2" rel="preload" type="font/woff2"/>
+    <link as="font" crossorigin="" href="./css/tata-aia/fonts/helvetica-bold.woff2" rel="preload" type="font/woff2"/>
+    <link as="font" crossorigin="" href="./css/tata-aia/fonts/Helvetica-Neue-Light.woff2" rel="preload" type="font/woff2"/>
+    <link as="font" crossorigin="" href="./css/tata-aia/fonts/helvetica-neue-lt-std-Th.woff2" rel="preload" type="font/woff2"/>
     <style>
       @font-face {
         font-family: "Helvetica";
@@ -68,11 +45,11 @@
           format("woff2");
       }
     </style>
-    <link rel="stylesheet" href="./css/tata-aia/header-landing.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/firstfold.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/slick.min.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/slick-theme.min.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/landing-page.css"/>
+    <link rel="stylesheet" href="./css/tata-aia/header-landing.css" />
+    <link rel="stylesheet" href="./css/tata-aia/firstfold.css" />
+    <link rel="stylesheet" href="./css/tata-aia/slick.min.css" />
+    <link rel="stylesheet" href="./css/tata-aia/slick-theme.min.css" />
+    <link rel="stylesheet" href="./css/tata-aia/landing-page.css" />
 
     <!-- <link rel="preload" href="./css/tata-aia/slick.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="./css/tata-aia/slick-theme.min.css" as="style" onload="this.rel='stylesheet'">
@@ -1268,58 +1245,56 @@
       </div>
     </footer>
     <!-- FOOTER END -->
-    <link rel="stylesheet" href="./css/tata-aia/footer-landing.css"/>
-    <script src="./js/tata-aia/jquery.min.js"></script>
-    <script src="./js/tata-aia/slick.min.js"></script>
-    <script src="./js/tata-aia/lozad.min.js"></script>
-
-    <script>
-      /* Lozad START*/
-      const observer = lozad(); // lazy loads elements with default selector as ".lozad"
-      observer.observe();
-      /* Lozad END*/
-    </script>
+    <link rel="stylesheet" href="./css/tata-aia/footer-landing.css" />
+    <script src="./js/tata-aia/jquery.min.js" defer></script>
+    <script src="./js/tata-aia/slick.min.js" defer></script>
+    <script src="./js/tata-aia/lozad.min.js" defer></script>
 
     <script>
       //   Testimonial START
-      $(".testi-carousel").slick({
-        dots: true,
-        infinite: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        prevArrow: false,
-        nextArrow: false,
-        responsive: [
-          {
-            breakpoint: 1366,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: false,
-              dots: true,
-              arrow: false,
+      window.onload = function () {
+        $(".testi-carousel").slick({
+          dots: true,
+          infinite: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          prevArrow: false,
+          nextArrow: false,
+          responsive: [
+            {
+              breakpoint: 1366,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true,
+                arrow: false,
+              },
             },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              infinite: false,
-              slidesToShow: 1.3,
-              slidesToScroll: 1,
+            {
+              breakpoint: 600,
+              settings: {
+                infinite: false,
+                slidesToShow: 1.3,
+                slidesToScroll: 1,
+              },
             },
-          },
-          {
-            breakpoint: 380,
-            settings: {
-              infinite: false,
-              slidesToShow: 1.3,
-              slidesToScroll: 1,
+            {
+              breakpoint: 380,
+              settings: {
+                infinite: false,
+                slidesToShow: 1.3,
+                slidesToScroll: 1,
+              },
             },
-          },
-        ],
-      });
-
-      //   Testimonial END
+          ],
+        });
+        //   Testimonial END
+        /* Lozad START*/
+        const observer = lozad(); // lazy loads elements with default selector as ".lozad"
+        observer.observe();
+        /* Lozad END*/
+      };
     </script>
 
     <script>
