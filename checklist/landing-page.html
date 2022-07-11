@@ -1308,15 +1308,15 @@
     <script src="./js/tata-aia/lozad.min.js" defer></script>
 
     <script>
-      //   Testimonial START
-      // var initInterval = setInterval(function () {
-      //   if (window.jQuery) {
-      //     clearInterval(initInterval);
-      //     init(); // where init is the entry point for your code execution
-      //   }
-      // }, 20);
+      // Testimonial START
+      var initInterval = setInterval(function () {
+        if (window.jQuery) {
+          clearInterval(initInterval);
+          init(); // where init is the entry point for your code execution
+        }
+      }, 20);
 
-      // function init() {
+      function init() {
         $(".testi-carousel").slick({
           dots: true,
           infinite: false,
@@ -1358,7 +1358,7 @@
         const observer = lozad(); // lazy loads elements with default selector as ".lozad"
         observer.observe();
         /* Lozad END*/
-      // }
+      }
     </script>
 
     <script>
