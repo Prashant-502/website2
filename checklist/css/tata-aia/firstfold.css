@@ -156,6 +156,9 @@
     height: auto!important;
     width: auto!important;
   }
+  header{
+    width: -webkit-fill-available!important;
+  }
   .bannersec {
     background: transparent;
   }
