@@ -1290,9 +1290,9 @@
     <link rel="preload" href="./css/tata-aia/footer-landing.css" as="style" onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="./css/tata-aia/footer-landing.css" media="print" onload="this.media='all'">
     <!-- <link rel="stylesheet" href="./css/tata-aia/footer-landing.css" /> -->
-    <script src="./js/tata-aia/jquery.min.js" ></script>
-    <script src="./js/tata-aia/slick.min.js" ></script>
-    <script src="./js/tata-aia/lozad.min.js" ></script>
+    <script src="./js/tata-aia/jquery.min.js" defer></script>
+    <script src="./js/tata-aia/slick.min.js" defer></script>
+    <script src="./js/tata-aia/lozad.min.js" defer></script>
 
     <script>
       // Testimonial START
@@ -1303,7 +1303,7 @@
         }
       }, 20);
 
-      // function init() {
+      function init() {
         /* Lozad START*/
         const observer = lozad(); // lazy loads elements with default selector as ".lozad"
         observer.observe();
@@ -1346,7 +1346,7 @@
           ],
         });
         //   Testimonial END
-      // }
+      }
     </script>
 
     <script>
