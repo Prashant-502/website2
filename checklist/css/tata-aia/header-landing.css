@@ -23,8 +23,8 @@ header .header-sec {
 }
 
 header .header-sec .header-logo {
-  height: 32px;
-  width: auto;
+  /* height: 32px;
+  width: auto; */
 }
 
 header .header-sec .header-right {

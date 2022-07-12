@@ -2195,6 +2195,10 @@ section.yt-style {
 
 /* Testimonials START */
 
+.testimonial__info.d-flex.pt-10 img{
+  border-radius: 50px;
+}
+
 .testimonial .container {
   max-width: 1090px;
   margin: 0 auto;
