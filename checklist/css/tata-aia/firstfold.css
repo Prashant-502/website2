@@ -152,7 +152,7 @@
 }
 
 @media (max-width: 767px) {
-  .bannersec.bannersec-style{
+  .bannersec.bannersec-style,.bannercarousel.banner-carousel-style{
     height: auto!important;
     width: auto!important;
   }
