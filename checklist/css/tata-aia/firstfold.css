@@ -118,7 +118,8 @@
   box-shadow: 0px 0px 14px rgba(0, 115, 187, 0.1);
   border-radius: 12px;
   padding: 24px 34px;
-  width: 32%;
+  width: 348px;
+  height: 133px;
 }
 
 .bannercarousel__details .cards__details .cards__item .carouselcard:nth-child(n+4) {
