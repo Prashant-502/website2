@@ -152,6 +152,10 @@
 }
 
 @media (max-width: 767px) {
+  .bannersec.bannersec-style{
+    height: auto!important;
+    width: auto!important;
+  }
   .bannersec {
     background: transparent;
   }
