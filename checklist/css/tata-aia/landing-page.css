@@ -1947,14 +1947,14 @@ body {
 }
 
 .youtube .youtube-section__item .video-thumb-div .video-overlay-btn img {
-  width: 80px;
-  height: auto;
+  /* width: 80px;
+  height: auto; */
 }
 
 .youtube .youtube-section__item .video-thumb-div .video-thumbnail {
-  height: auto;
+  /* height: auto; */
   max-width: 532px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .youtube .youtube-section__item .video #yt-anchor {
