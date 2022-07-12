@@ -15,7 +15,7 @@
 }
 
 .bannersec .headbanner__section {
-  width: 50%;
+  width: 545px;
 }
 
 .bannersec .headbanner__section h3 {
@@ -54,7 +54,7 @@
   flex-direction: column;
   position: relative;
   align-items: flex-end;
-  width: 50%;
+  width: 545px;
 }
 
 .bannersec .headbanner .bannerimg img {
