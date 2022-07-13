@@ -23,8 +23,8 @@ header .header-sec {
 }
 
 header .header-sec .header-logo {
-  /* height: 32px;
-  width: auto; */
+  height: 32px;
+  width: auto;
 }
 
 header .header-sec .header-right {
@@ -51,8 +51,8 @@ header .header-sec .header-right .face-agent a {
 }
 
 header .header-sec .header-right .face-agent a img {
-  /* height: 24px;
-  width: auto; */
+  height: 24px;
+  width: auto;
 }
 
 header .header-sec .header-right .face-agent .contact-us {

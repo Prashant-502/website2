@@ -118,7 +118,7 @@
   box-shadow: 0px 0px 14px rgba(0, 115, 187, 0.1);
   border-radius: 12px;
   padding: 24px 34px;
-  /* width: 32%; */
+  width: 32%;
 }
 
 .bannercarousel__details .cards__details .cards__item .carouselcard:nth-child(n+4) {
@@ -152,13 +152,6 @@
 }
 
 @media (max-width: 767px) {
-  .bannersec.bannersec-style,.bannercarousel.banner-carousel-style{
-    height: auto!important;
-    width: auto!important;
-  }
-  header{
-    width: -webkit-fill-available!important;
-  }
   .bannersec {
     background: transparent;
   }
@@ -296,7 +289,7 @@
     flex-direction: column;
     align-items: flex-start;
     min-height: 140px;
-    background-image: url("/checklist/img/tata-aia/calculator-mobile.svg");
+    background-image: url("../img/calculator-mobile.svg");
     padding: 23px 13px 22px 13px;
   }
 
