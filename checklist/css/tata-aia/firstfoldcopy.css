@@ -202,7 +202,10 @@
     flex-direction: row-reverse;
     padding-top: 58px;
     background: #F2F7FB;
-    width: 100%;
+    /* width: 100%;
+     */
+     max-width: 390px;
+     max-height: 190px;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
