@@ -57,11 +57,11 @@
   width: 50%;
 }
 
-.bannersec .headbanner .bannerimg img {
+/* .bannersec .headbanner .bannerimg img {
   max-height: 353px;
   min-width: 320px;
   height: auto;
-}
+} */
 
 .bannersec .headbanner .bannerimg .BannerTxt {
   display: flex;
@@ -204,9 +204,9 @@
 
   .bannersec .headbanner .bannerimg img {
     padding-top: 6px;
-    max-height: 130px;
+    max-height: 130px !important;
     max-width: 141px;
-    min-width: 141px;
+    min-width: 141px!important;
   }
 
   .bannersec .headbanner .bannerimg .BannerTxt {
