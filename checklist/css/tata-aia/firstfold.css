@@ -289,7 +289,7 @@
     flex-direction: column;
     align-items: flex-start;
     min-height: 140px;
-    background-image: url("../img/calculator-mobile.svg");
+    background-image: url("/checklist/img/tata-aia/calculator-mobile.png")!important;
     padding: 23px 13px 22px 13px;
   }
 
