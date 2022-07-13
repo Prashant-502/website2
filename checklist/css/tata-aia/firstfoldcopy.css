@@ -149,9 +149,15 @@
 .banner-carousel-style {
   padding-top: 36px;
   background-color: transparent;
+
 }
 
 @media (max-width: 767px) {
+  .bannercarousel.banner-carousel-style {
+    max-width: 390px;
+    max-height: 230px;
+  }
+
   .bannersec {
     background: transparent;
   }
@@ -229,6 +235,8 @@
   .bannersec-style {
     padding-top: 0px;
     margin-top: 5px;
+    max-width: 390px;
+    height: 340px;
   }
 
   .bannercarousel__details {

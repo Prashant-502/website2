@@ -22,6 +22,8 @@ footer .footer-div .footer-anchor {
 @media (max-width: 767px) {
   footer {
     padding: 0px;
+    max-width: 390px;
+    max-height: 71px;
   }
 
   footer .footer-div {

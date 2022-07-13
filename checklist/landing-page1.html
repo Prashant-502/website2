@@ -195,7 +195,7 @@
 
     <!-- BANNER SECTION -->
 
-    <section class="bannersec bannersec-style">
+    <section class="bannersec bannersec-style" style="height:375.4px;width:1531px">
       <div class="container page-container">
         <div class="headbanner d-flex center">
           <div class="headbanner__section start d-flex col">
@@ -251,7 +251,7 @@
 
     <!-- BANNER CAROUSEL  -->
 
-    <section class="bannercarousel banner-carousel-style">
+    <section class="bannercarousel banner-carousel-style" style="height:418px;width:1531px">
       <div class="bannercarousel__details container page-container md-padding">
         <h3 class="Inter uppercase">Benefits of our term plan</h3>
         <div class="cards__details">
@@ -949,6 +949,7 @@
                 class="search-img lozad"
                 data-src="./img/tata-aia/search-icon.svg"
                 src="./img/tata-aia/blank-image-1-1.png"
+                height="13" width="12"
             /></a>
           </div>
           <p class="asked-question helvetica">
@@ -1057,6 +1058,7 @@
                 src="./img/tata-aia/blank-image-1-1.png"
                 alt="arrow-img"
                 class="desktop-img mr-5 lozad"
+                height="10" width="8"
               />
               See more Queries
               <img
@@ -1064,12 +1066,14 @@
                 src="./img/tata-aia/blank-image-1-1.png"
                 alt="arrow-img"
                 class="desktop-img ml-5 lozad"
+                height="10" width="8"
               />
               <img
                 data-src="./img/tata-aia/arrow-img.svg"
                 src="./img/tata-aia/blank-image-1-1.png"
                 alt="arrow-img"
                 class="mobile-img ml-7 lozad"
+                height="10" width="8"
               />
             </a>
           </div>
@@ -1377,7 +1381,7 @@
     <!-- RED ANCHOR LINKS END -->
 
     <!-- FOOTER START -->
-    <footer>
+    <footer style="height:81px;width:1531px">
       <div class="container">
         <div class="d-flex footer-div just-end center">
           <a href="#" class="primary-act-btn footer-anchor helvetica-bold"
@@ -1400,20 +1404,20 @@
       onload="this.media='all'"
     />
     <!-- <link rel="stylesheet" href="./css/tata-aia/footer-landing.css" /> -->
-    <script src="./js/tata-aia/jquery.min.js" ></script>
-    <script src="./js/tata-aia/slick.min.js" ></script>
-    <script src="./js/tata-aia/lozad.min.js" ></script>
+    <script src="./js/tata-aia/jquery.min.js" defer></script>
+    <script src="./js/tata-aia/slick.min.js" defer></script>
+    <script src="./js/tata-aia/lozad.min.js" defer></script>
 
     <script>
       // Testimonial START
-    //   var initInterval = setInterval(function () {
-    //     if (window.jQuery) {
-    //       clearInterval(initInterval);
-    //       init(); // where init is the entry point for your code execution
-    //     }
-    //   }, 20);
+      var initInterval = setInterval(function () {
+        if (window.jQuery) {
+          clearInterval(initInterval);
+          init(); // where init is the entry point for your code execution
+        }
+      }, 20);
 
-    //   function init() {
+      function init() {
         /* Lozad START*/
         const observer = lozad(); // lazy loads elements with default selector as ".lozad"
         observer.observe();
@@ -1456,7 +1460,7 @@
           ],
         });
         //   Testimonial END
-    //   }
+      }
     </script>
 
     <script>
