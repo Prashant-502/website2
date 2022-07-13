@@ -181,10 +181,10 @@
 
   .bannersec .headbanner__section p {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 14px!important;
     color: #333333;
-    line-height: 132.5%;
-    padding-bottom: 24px;
+    line-height: 132.5%!important;
+    padding-bottom: 24px!important;
   }
 
   .bannersec .headbanner__section .BannerSec__btn {
